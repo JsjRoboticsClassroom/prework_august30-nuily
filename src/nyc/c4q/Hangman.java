@@ -17,6 +17,12 @@ public class Hangman {
         return mMisses;
     }
 
+    public void resetGame() {
+        mMisses = 0;
+// reset secret word
+// reset last guess
+    }
+
     public void readLetter() {
         Scanner scanner = new Scanner(System.in);
         char input = scanner.next().charAt(0);
